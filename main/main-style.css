@@ -1,0 +1,56 @@
+/*
+    main-style.css
+
+    Defines default beahvior for commonly used tags
+    Please keep order logical to website apperance
+    ex) Navigation at top of page and code
+        Then comes headers 
+        Then comes paragraph description
+
+    For unique styles, refer to respective .css files
+*/
+body {
+    margin: 0px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    opacity: 0.92;
+    background: linear-gradient(to right, #B8B8C2, white);
+}
+
+navblock {
+    border-style: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "Courier New", Courier, Monospace;
+}
+
+.padding {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h1 {
+    /* Headers define distinct segments of the accordian on a page */
+    font-weight: 600;
+    font-size: 35;
+    text-align: center;
+}
+
+p {
+    font-size: 18;
+    text-align: center;
+}
+
+p.large {
+    font-size: 22;
+    text-align: center;
+}
+

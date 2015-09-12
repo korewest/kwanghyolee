@@ -2,74 +2,133 @@
 
 <html>
 <head>
-    <title>Web Development Showcase</title>
+    <title>KwanghyoLee</title>
     <link rel="stylesheet" href="main-style.css">
     <link rel="stylesheet" href="image-style.css">
+    <link rel="stylesheet" href="pagination-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
 </head>
     
 <body>
     <!-- Navigation -->
     <nav> 
         <!-- Use block ID and JavaScript to link -->
-        <navblock id="khl_logo">
-            <img src="img/khl_logo.gif" alt="kwanghyolee">
-        </navblock>
-        <navblock id="about">About</navblock>
-        <navblock id="photography">Photography</navblock>
-        <navblock id="music">Music</navblock>
+        
+        <div id="khl">KWANGHYO LEE</div>
+        <div id="about" class="navblock">About</div>
+        <div id="photography" class="navblock">Photography</div>
+        <div id="what" class="navblock">WhatsUp</div>
+        <div id="contact" class="navblock">Contact</div>
         
     </nav>
     
-    <div id="andrew_img">
+    <div id="andrew_img" class="relative">
         <img src="img/andrew.jpg" alt="andrew">
+        <div id="name_text">
+            <font size="6"><b>Kwanghyo Lee</b></font><br><br><br>
+            <i>This is my Korean name that defines my constant focus in life.
+                    In short, <b>Kwang</b> means light and brilliance 
+                    signifying clarity in one's actions and intentions. <b>Hyo</b> 
+                    means respect, especially towards the elders. Most people know me 
+                as <b>Andrew</b>. Welcome to my personal webpage! <br>
+            </i>
+        </div>
     </div>
     
-    <div class="padding" id="about_seg">
-        <!-- Headers should accordian out for more info when scrolled -->
-        <h1> Kwanghyo Lee </h1>
-            <!-- h1 is a subheading that should outline the header
-                 and act as a single paragraph description. Simple and neat
-                 should be the guideline here. -->
-            <p> This is my Korean name that defines my constant
-                focus in life. In short, <b>Kwang</b> means light and brilliance 
-                signifying clarity in one's actions and intentions. <b>Hyo</b> 
-                means respect, especially towards the elders. </p>
-            <p> This website aims to be a sandbox for sample web-development 
-                efforts and sharing my hobbies! </p>
-
-        <h1> About </h1>
-            <p> Avid alumni and advocate of University of the Pacific with 
-                BS in Computer Science </p>
-            <p> Software Developer at 
-                insert-next-awesome-career-here </p>
-            <!-- Consider including a sample photo backdrop for this 
-                 segment to quickly showcase one's work. Obviously 
-                 link to dklportraits.com -->
-            <p> Professional Portrait Photographer </p>
-            <p> Hobbyist Singer and Instrumentalist </p>
-            <p> Brewing ideas like a 6 a.m. coffee machine </p>
-
-        <h1> Misc </h1>
-            <p> Don't be so fascinated by this skeleton HTML setup. 
-                More content will come! </p>
+    
+    <div id="chevronDiv">
+            <img src="img/chevron-left.png" id="chevScrollLeft">
+            <img src="img/chevron-right.png" id="chevScrollRight">
     </div>
     
-    <div class="padding" id="photography_seg">
+    <div class="padding aboutSegBackground0" id="aboutSeg">
+        <div id="about0tab" class="currAboutPage">
+            <div class="aboutText" id="about0text">
+                <h1> About this webpage </h1>
+                <p>
+                This webpage was built from scratch for the purposes of 
+                personal growth in web-development skills and also to leave a small footprint
+                    about me on the internet. <br>
+                    I have several features in mind to add to the webpage in the future such as 
+                    a blog, embedded email form, and mobile enhancements.
+                </p>
+            </div>
+            <div id="about0pic">
+                <img src="img/web_dev.gif">
+            </div>
+        </div>
+        
+        <div id="about1tab" class="hiddenAboutPage"> 
+            <div class="aboutText" id="about1text">
+                <h1> Pacific Alumni </h1>
+                <p> <i>An avid alumni and advocate for University of the Pacific.</i> <br><br>
+                I cannot say enough good things about Pacific. From its small family of students and 
+                    faculty to its amazing programs that offer industry experience, it is a place that 
+                    I will advocate for the rest of my life. I served as Pacific Ambassador introducing 
+                    new students and families, and led orientation groups. As a growing professional in the 
+                    tech industry, I represented <a href="http://www.onlab.us" target="_blank">ON.Lab</a> 
+                    for recruitment of Pacific's engineer students and I continue to reach out in ways that I 
+                    hope will help the engineering department. </p>
+            </div>
+            <div id="about1pic">
+                <img src="img/pacific_seal.gif">
+            </div>
+        </div>
+        
+        <div id="about2tab" class="hiddenAboutPage">
+            <div class="aboutText" id="about2text">
+                <h1> Growing Up </h1>
+                <p> My roots lie in South Korea where I was born and raised. When I was in 3rd grade, 
+                my small family of 3 moved out to Chicago, IL. I will never forget the cold breeze that first 
+                    greeted us, and perhaps it foreshadowed the hardships that we were about to face 
+                    and endure. That didn't stop us from exploring the new country, however. We loved
+                    roadtrips and drove to various states all around East Coast listening to casette tapes of 
+                    The Eagles, Billy Joel, Beegees, and the likes. Our adventures eventually led us 
+                    to Los Angeles, CA and it has been our home to this day. 
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="padding" id="photographySeg">
         <h1> Photography </h1>
             <p> 
                 Photography is a hobby close to my heart. It all started 
                 with picking up a Nikon DSLR when I finally had enough time and
                 money. Since then, I started a portrait photography business 
-                that thrives on personal connection and emotion. 
+                that thrives on personal connection and emotion. Feel free to visit
+                my photography webpage:
             </p>
     
-        <h1> DKLportraits </h1>
-        <!-- TODO: Add portrait background here -->
             <p>
-                <a href="www.dklportraits.com"><i>"Portraits that speak for you"</i></a>
+                <a href="http://www.dklportraits.com" target="_blank">
+                    <i>"Portraits that speak for you"</i>
+                </a>
             </p>
     </div>
     
+    <div class="padding" id="whatSeg">
+        <h1> Whats up </h1>
+        <p>
+            I am currently having a blast applying to various jobs in the Bay area, as well as 
+            Southern California / Seattle. With the vast amount of free time that I have lately, I like to 
+            spend time with close friends, work on side projects like this webpage, cook dishes that are not 
+            always edible, and dream about the possibilities of opening a coffee house in downtown San Francisco. 
+        </p>
+    </div>
+    
+    <div class="padding" id="contactSeg">
+        <h1> Contact </h1>
+        Please send all inquiries to andrew@kwanghyolee.com <br>
+        Visit my <a href="https://www.linkedin.com/in/kwanghyolee" target="_blank">LinkedIn</a> 
+        for professional reference <br>
+        
+    </div>
+    
+    <script src="js/nav.js"></script>
+    <script src="about-page.js"></script>
 </body>
     
 </html>

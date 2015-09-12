@@ -11,30 +11,57 @@
 */
 body {
     margin: 0px;
+    background: #DADADB;
+}
+
+#khl {
+    float: left;
+    border-style: none;
+    padding-left: 80px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    background: #222229;
+    color: #E8E8DD;
+}
+
+#khl:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 nav {
     position: fixed;
     width: 100%;
     font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    
+    /* z-index required to be in front of about paging chevrons */
+    z-index: 3;
     opacity: 0.92;
-    background: linear-gradient(to right, #B8B8C2, white);
+    background: linear-gradient(to right, #F6F6F9, white);
 }
 
-navblock {
+.navblock {
+    float: left;
     border-style: none;
     padding-left: 30px;
     padding-right: 30px;
+    /* Padding correlated with border-width below to equal 40 px */
+    padding-bottom: 36px;
+    padding-top: 30px;
     font-family: "Courier New", Courier, Monospace;
 }
 
+.navblock:hover {
+    border-bottom: solid;
+    border-width: 4px;
+    border-color: #6D6D6E;
+    cursor: pointer;
+}
+
 .padding {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 h1 {
@@ -44,13 +71,114 @@ h1 {
     text-align: center;
 }
 
+.aboutSegBackground0 {
+    /*background: linear-gradient(to right, #FFEFDE, white);*/
+    background-position: 40% 0%;
+    background: #CDDDE5;
+}
+
+.aboutSegBackground1 {
+    background-image: url(img/pacific_arch.jpg);
+    background-position: 40% 0%;
+}
+
+.aboutSegBackground2 {
+    background-image: url(img/south_korea_city.jpg);
+    background-position: 20%;
+}
+
+#aboutSeg {
+    /*background-color: #FFEFDE;*/
+    padding-bottom: 480px;
+    /*height: 100%;*/
+    font-family: 'Optima', Segoe, 'Segoe UI', Candara, Calibri;
+    font-size: 12px;
+}
+
 p {
-    font-size: 18;
+    font-size: 24px;
     text-align: center;
 }
 
 p.large {
     font-size: 22;
     text-align: center;
+}
+
+.relative {
+    position: relative;
+}
+
+#name_text {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    right: 40px;
+    font-size: 20px;
+    max-height: 220px;
+    overflow: scroll;
+}
+
+#about0text {
+    float: left;
+    position: absolute;
+    width: 50%;
+    z-index 2;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+#about0pic {
+    float: right;
+    width: 50%;
+    padding-top: 80px;
+}
+
+#about1text {
+    float: left;
+    position: absolute;
+    width: 50%;
+    /* z-index in front of chevron divs so that content is clickable */
+    z-index: 2;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+#about1pic {
+    float: right;
+    position: relative;
+    padding-top: 50px;
+    width: 350px;
+    max-height: 350px;
+}
+
+#about2text {
+    float: left;
+    position: absolute;
+    width: 50%;
+    z-index 2;
+    max-height: 400px;
+    overflow: scroll;
+}
+#photographySeg {
+    padding-top: 16px;
+}
+
+#contactSeg {
+    background: linear-gradient(to right, #E8E8E8, white);
+    padding-bottom: 200px;
+}
+
+.hiddenAboutPage {
+    display: none;   
+}
+
+.currAboutPage { 
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    animation: fadein 2s;
+    
+    display: block;
 }
 

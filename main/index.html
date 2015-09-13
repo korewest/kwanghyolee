@@ -5,7 +5,6 @@
     <title>KwanghyoLee</title>
     <link rel="stylesheet" href="main-style.css">
     <link rel="stylesheet" href="image-style.css">
-    <link rel="stylesheet" href="pagination-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
     </script>
 </head>
@@ -27,11 +26,11 @@
         <img src="img/andrew.jpg" alt="andrew">
         <div id="name_text">
             <font size="6"><b>Kwanghyo Lee</b></font><br><br><br>
-            <i>This is my Korean name that defines my constant focus in life.
-                    In short, <b>Kwang</b> means light and brilliance 
-                    signifying clarity in one's actions and intentions. <b>Hyo</b> 
-                    means respect, especially towards the elders. Most people know me 
-                as <b>Andrew</b>. Welcome to my personal webpage! <br>
+            <i>This is my Korean name that defines my constant focus in life. <br>
+                    <b>Kwang</b> means light and brilliance 
+                    signifying clarity in one's actions and intentions. <br>
+                    <b>Hyo</b> means respect, especially towards the elders. <br>
+                Most people know me as <b>Andrew</b>. Welcome to my personal webpage! <br>
             </i>
         </div>
     </div>
@@ -51,7 +50,9 @@
                 personal growth in web-development skills and also to leave a small footprint
                     about me on the internet. <br>
                     I have several features in mind to add to the webpage in the future such as 
-                    a blog, embedded email form, and mobile enhancements.
+                    a blog, embedded email form, and mobile enhancements. There's still some work to 
+                    accomplish for multiple browser compatibilities. Meanwhile, please view with Chrome 
+                    for best results. 
                 </p>
             </div>
             <div id="about0pic">
@@ -61,19 +62,21 @@
         
         <div id="about1tab" class="hiddenAboutPage"> 
             <div class="aboutText" id="about1text">
-                <h1> Pacific Alumni </h1>
+                <h1> <font style="color: orange;">Pacific</font> Alumni </h1>
                 <p> <i>An avid alumni and advocate for University of the Pacific.</i> <br><br>
-                I cannot say enough good things about Pacific. From its small family of students and 
-                    faculty to its amazing programs that offer industry experience, it is a place that 
+                From its small family of students and 
+                    faculty to its amazing programs that offer industry experience, Pacific is a place that 
                     I will advocate for the rest of my life. I served as Pacific Ambassador introducing 
                     new students and families, and led orientation groups. As a growing professional in the 
                     tech industry, I represented <a href="http://www.onlab.us" target="_blank">ON.Lab</a> 
                     for recruitment of Pacific's engineer students and I continue to reach out in ways that I 
                     hope will help the engineering department. </p>
             </div>
+            <!-- 
             <div id="about1pic">
                 <img src="img/pacific_seal.gif">
             </div>
+            -->
         </div>
         
         <div id="about2tab" class="hiddenAboutPage">
@@ -92,43 +95,46 @@
         
     </div>
     
-    <div class="padding" id="photographySeg">
-        <h1> Photography </h1>
-            <p> 
-                Photography is a hobby close to my heart. It all started 
-                with picking up a Nikon DSLR when I finally had enough time and
-                money. Since then, I started a portrait photography business 
-                that thrives on personal connection and emotion. Feel free to visit
-                my photography webpage:
-            </p>
-    
+    <div class="padding photoSegBackground0" id="photographySeg">
+        <div id="phototext">
+        <h1> DKL Portraits </h1>
             <p>
                 <a href="http://www.dklportraits.com" target="_blank">
-                    <i>"Portraits that speak for you"</i>
+                    <font style="color: #3F3F40;">Portraits that speak for you</font>
                 </a>
             </p>
+        </div>
     </div>
     
     <div class="padding" id="whatSeg">
-        <h1> Whats up </h1>
-        <p>
-            I am currently having a blast applying to various jobs in the Bay area, as well as 
-            Southern California / Seattle. With the vast amount of free time that I have lately, I like to 
-            spend time with close friends, work on side projects like this webpage, cook dishes that are not 
-            always edible, and dream about the possibilities of opening a coffee house in downtown San Francisco. 
-        </p>
+        <div id="whattext">
+            <h1> Whats up </h1>
+            <p>
+                I am currently having a blast applying to various jobs in the Bay area, as well as 
+                Southern California / Seattle. I look forward to starting a career in software development and testing. 
+                With the vast amount of free time that I have lately, I like to 
+                spend it with close friends, work on side projects like this webpage, cook dishes that are not 
+                always edible, and dream about the possibilities of opening a coffee house in downtown San Francisco. 
+            </p>
+        </div>
     </div>
     
     <div class="padding" id="contactSeg">
-        <h1> Contact </h1>
-        Please send all inquiries to andrew@kwanghyolee.com <br>
-        Visit my <a href="https://www.linkedin.com/in/kwanghyolee" target="_blank">LinkedIn</a> 
-        for professional reference <br>
+        <p>
+        KWANGHYO LEE<br><br>
+        <font style="color: #B8B8B8">andrew@kwanghyolee.com</font><br><br>
+        <a href="https://www.linkedin.com/pub/andrew-lee/6a/32b/a5a" target="_blank">
+      
+            <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Andrew Lee's profile on LinkedIn"> </a>
+        
+            
+        </p>
         
     </div>
     
     <script src="js/nav.js"></script>
-    <script src="about-page.js"></script>
+    <script src="js/about-page.js"></script>
+    <script src="js/photo-change.js"></script>
 </body>
     
 </html>

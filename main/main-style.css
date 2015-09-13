@@ -50,6 +50,7 @@ nav {
     padding-bottom: 36px;
     padding-top: 30px;
     font-family: "Courier New", Courier, Monospace;
+    color: #192338;
 }
 
 .navblock:hover {
@@ -69,6 +70,7 @@ h1 {
     font-weight: 600;
     font-size: 35;
     text-align: center;
+    font-family: Futura, "Trebuchet-MS", Arial, sans-serif;
 }
 
 .aboutSegBackground0 {
@@ -78,26 +80,30 @@ h1 {
 }
 
 .aboutSegBackground1 {
-    background-image: url(img/pacific_arch.jpg);
+    background-image: url(img/pacific_spirit_bw.jpg);
     background-position: 40% 0%;
+    background-size: 130%;
+    background-repeat: no-repeat;
 }
 
 .aboutSegBackground2 {
     background-image: url(img/south_korea_city.jpg);
     background-position: 20%;
+    background-repeat: no-repeat;
 }
 
 #aboutSeg {
     /*background-color: #FFEFDE;*/
-    padding-bottom: 480px;
+    padding-bottom: 600px;
     /*height: 100%;*/
-    font-family: 'Optima', Segoe, 'Segoe UI', Candara, Calibri;
-    font-size: 12px;
+    /*font-family: 'Optima', Segoe, 'Segoe UI', Candara, Calibri;*/
+    font-family: "Courier New", Courier, Monospace;
 }
 
 p {
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
+    font-family: Futura, "Trebuchet-MS", Arial, sans-serif;
 }
 
 p.large {
@@ -114,18 +120,21 @@ p.large {
     top: 150px;
     left: 50%;
     right: 40px;
-    font-size: 20px;
-    max-height: 220px;
+    font-size: 18px;
+    max-height: 320px;
     overflow: scroll;
+    font-family: Futura, "Trebuchet-MS", Arial, sans-serif;
+    font-style: normal;
+    text-align: center;
 }
 
 #about0text {
     float: left;
     position: absolute;
-    width: 50%;
+    width: 40%;
     z-index 2;
-    max-height: 400px;
-    overflow: scroll;
+    max-height: 460px;
+    overflow: hidden;
 }
 
 #about0pic {
@@ -135,13 +144,14 @@ p.large {
 }
 
 #about1text {
-    float: left;
     position: absolute;
-    width: 50%;
+    width: 60%;
     /* z-index in front of chevron divs so that content is clickable */
     z-index: 2;
-    max-height: 400px;
-    overflow: scroll;
+    max-height: 460px;
+    overflow: hidden;
+    left: 20%;
+    color: white;
 }
 
 #about1pic {
@@ -155,18 +165,36 @@ p.large {
 #about2text {
     float: left;
     position: absolute;
-    width: 50%;
+    width: 40%;
     z-index 2;
-    max-height: 400px;
-    overflow: scroll;
+    max-height: 460px;
+    overflow: hidden;
 }
-#photographySeg {
-    padding-top: 16px;
+
+#phototext {
+    float: right;
+    background: white;
+    opacity: 0.4;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #contactSeg {
-    background: linear-gradient(to right, #E8E8E8, white);
-    padding-bottom: 200px;
+    background: #4C4C50;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    color: #CCCCCC;
+}
+
+#whatSeg {
+    padding-bottom:350px;
+    width: auto;
+}
+
+#whattext {
+    position: absolute;
+    width: 60%;
+    left: 20%;
 }
 
 .hiddenAboutPage {

@@ -25,6 +25,7 @@
     height: 100%;
 }
 
+
 #about1pic img {
     width: 100%;
     padding-left: 50px;
@@ -33,8 +34,9 @@
 #chevScrollLeft {
     float: left;
     width: 50px;
-    padding-top: 200px;
-    padding-bottom: 150px;
+    padding-left: 5px;
+    background-color: white;
+    opacity: 0.24;
 }
 
 #chevScrollLeft:hover {
@@ -45,8 +47,9 @@
 #chevScrollRight {
     float: right;
     width: 50px;
-    padding-top: 200px;
-    padding-bottom: 150px;
+    padding-right: 5px;
+    background-color: white;
+    opacity: 0.24;
 }
 
 #chevScrollRight:hover {
@@ -57,14 +60,45 @@
 #chevronDiv {
     position: absolute;
     z-index: 1;
+    padding-top: 200px;
+    padding-bottom: 200px;
     width: 100%;
 }
 
 #photographySeg {
-    background-image: url(img/geese.jpg);
+    height: 600px;
+    padding-top: 16px;
+}
+
+.photoSegBackground0 {
+    background-image: url(img/annie_sf.jpg);
     background-repeat: no-repeat;
-    background-position: center left;
-    padding-bottom: 150px;
+    background-position: 50% 35%;
+}
+
+.photoSegBackground1 {
+    background-image: url(img/dude_with_cigar.jpg);
+    background-repeat: no-repeat;
+    background-position: 70% 30%;
+}
+
+.photoSegBackground2 {
+    background-image: url(img/baby_iphone.jpg);
+    background-repeat: no-repeat;
+    background-position: 10% 40%;
+}
+
+.photoSegBackground3 {
+    background-image: url(img/lisha.jpg);
+    background-repeat: no-repeat;
+    background-position: 10% 20%;
+}
+
+.photoSegBackground4 {
+    background-image: url(img/max.jpg);
+    background-repeat: no-repeat;
+    background-position: 30% 20%;
+    background-size: 100%;
 }
 
 #about1pic img {

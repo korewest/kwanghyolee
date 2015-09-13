@@ -44,7 +44,7 @@ $(document).ready(function() {
         // Some hard coded stuff to do cool transitions on pacific alumni about segment
         if( num_next == 1 ) {
             $("#aboutSeg").css("background-size", "130%");
-            $("#aboutSeg").animate({ "background-size": "100%" }, 20000);
+            $("#aboutSeg").animate({ "background-size": "95%" }, 3000);
         } else {
             $("#aboutSeg").stop();
             $("#aboutSeg").css("background-size", "auto");

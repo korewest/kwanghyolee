@@ -1,0 +1,35 @@
+.hidden_mobile {
+    display: none;
+}
+
+#mobile_nav {
+    width: 100%;
+    position: fixed;
+    float: left;
+    z-index: 4;
+    opacity: 0.92;
+}
+
+#mobile_khl {
+    background: #222229;
+    color: #E8E8DD;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: Futura, "Trebuchet-MS", Arial, sans-serif;
+}
+
+.andrew_img_mobile {
+    background-position: 30%;
+    height: 100%;
+}
+
+#mobile_name_text {
+    position: relative;
+    word-wrap: break-word;
+    width:90%;
+    padding: 10%;
+    background: #E0F5FF;
+    opacity: 0.9;
+    bottom: 0;
+}

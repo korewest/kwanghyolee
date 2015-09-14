@@ -3,8 +3,10 @@
 <html>
 <head>
     <title>KwanghyoLee</title>
+    <link rel="logo" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="main-style.css">
     <link rel="stylesheet" href="image-style.css">
+    <link rel="stylesheet" href="mobile-nav.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
     </script>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -15,7 +17,7 @@
     
 <body>
     <!-- Navigation -->
-    <nav> 
+    <nav id="main_nav"> 
         <!-- Use block ID and JavaScript to link -->
         
         <div id="khl">KWANGHYO LEE</div>
@@ -25,9 +27,13 @@
         <div id="contact" class="navblock">Contact</div>
         
     </nav>
+        
+    <div id="mobile_nav">
+        <div id="mobile_khl">KWANGHYO LEE</div>
+    </div>
     
     <div id="andrew_img" class="relative">
-        <img src="img/andrew.jpg" alt="andrew">
+        <!-- <img src="img/andrew.jpg" alt="andrew"> -->
         <div id="name_text">
             <font size="6"><b>Kwanghyo Lee</b></font><br><br><br>
             <i>This is my Korean name that defines my constant focus in life. <br>
@@ -37,8 +43,11 @@
                 Most people know me as <b>Andrew</b>. Welcome to my personal webpage! <br>
             </i>
         </div>
+        <div id="mobile_welcome" style="display: none;"></div>
+        <div id="mobile_name_text" style="display: none;">
+        <!-- Placeholder for mobile version -->
+        </div>
     </div>
-    
     
     <div id="chevronDiv">
             <img src="img/chevron-left.png" id="chevScrollLeft">
@@ -131,7 +140,6 @@
       
             <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Andrew Lee's profile on LinkedIn"> </a>
         
-            
         </p>
         
     </div>
@@ -140,6 +148,8 @@
     <script src="js/about-page.js"></script>
     <script src="js/photo-change.js"></script>
     <script src="js/preload-images.js"></script>
+    <script src="js/mobile-handler.js"></script>
+        
 </body>
     
 </html>

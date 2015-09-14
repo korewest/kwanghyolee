@@ -19,7 +19,7 @@ body {
     border-style: none;
     padding-left: 80px;
     padding-right: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     padding-top: 30px;
     background: #222229;
     color: #E8E8DD;
@@ -36,9 +36,8 @@ nav {
     width: 100%;
     font-weight: bold;
     
-    /* z-index required to be in front of about paging chevrons */
     z-index: 3;
-    opacity: 0.92;
+    opacity: 9.2;
     background: linear-gradient(to right, #F6F6F9, white);
 }
 
@@ -47,8 +46,8 @@ nav {
     border-style: none;
     padding-left: 30px;
     padding-right: 30px;
-    /* Padding correlated with border-width below to equal 40 px */
-    padding-bottom: 36px;
+    /* Padding bottom correlated with border-width in hover to equal 30 px */
+    padding-bottom: 26px;
     padding-top: 30px;
     font-family: Futura, "Trebuchet-MS", Arial, sans-serif;
     color: #192338;
@@ -117,7 +116,7 @@ p.large {
 
 #name_text {
     position: absolute;
-    top: 150px;
+    top: 20%;
     left: 50%;
     right: 40px;
     font-size: 18px;

@@ -12,7 +12,7 @@ $(document).ready(function() {
         }
         
         $("#photographySeg").css("opacity", "0.4");
-        $("#photographySeg").animate({ "opacity" : "1.0" }, 2000 )
+        $("#photographySeg").animate({ "opacity" : "1.0" }, 2500 )
         
         $("#photographySeg").removeClass("photoSegBackground" + currPhoto.toString());
         $("#photographySeg").addClass("photoSegBackground" + nextPhoto.toString());

@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('.navblock').click(function() {
         var div_scroll = $(this).attr('id');
         $('html,body').animate({
-            scrollTop: $("#" + div_scroll + "Seg").offset().top - 88 /* Offset to match seg */
+            scrollTop: $("#" + div_scroll + "Seg").offset().top - 74 /* Offset to match seg */
         }, 500);
     });
     

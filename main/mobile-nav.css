@@ -21,15 +21,32 @@
 
 .andrew_img_mobile {
     background-position: 30%;
-    height: 100%;
+    background-size: contain;
 }
 
 #mobile_name_text {
-    position: relative;
     word-wrap: break-word;
-    width:90%;
-    padding: 10%;
-    background: #E0F5FF;
-    opacity: 0.9;
-    bottom: 0;
+    width:inherit;
+    padding: 2%;
+    background: #222229;
+    color: #E8E8DD;
+    opacity: 0.95;
+    font-size: 20px;
+}
+
+#mobile_welcome {
+    position: absolute;
+    top: 5%;
+    right: 5%; 
+    margin-left: 5%;
+    top: 10%;
+    background: white;
+    opacity: 0.8;
+    border-bottom: solid;
+    text-align: center;
+}
+
+#mobile_welcome p {
+    padding-left: 10px;
+    padding-right: 10px;
 }

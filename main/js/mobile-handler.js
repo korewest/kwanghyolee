@@ -5,8 +5,7 @@ $(document).ready(function() {
     
     // some variable initializations on load
     var temp_html = $("#name_text").html();
-    // note: re-enable when mobile version is complete
-    // $("#mobile_name_text").html(temp_html);
+    $("#mobile_name_text").html(temp_html);
     
     function checkWidth() { 
         var windowSize = $window.width();
@@ -70,6 +69,14 @@ $(document).ready(function() {
             $("#mobile_name_text").slideDown("slow");
         } else {
             $("#mobile_name_text").slideUp("slow");
+        }
+    });
+    
+    $("#mobile_menu, .mobile_nav_display").click(function() {
+        if( $(".mobile_nav_display").is(":hidden") ) {
+            $(".mobile_nav_display").slideDown("slow");
+        } else {
+            $(".mobile_nav_display").slideUp("slow");
         }
     });
     

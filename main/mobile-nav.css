@@ -3,20 +3,33 @@
 }
 
 #mobile_nav {
+    background: #222229;
     width: 100%;
     position: fixed;
     float: left;
     z-index: 4;
     opacity: 0.92;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+#mobile_menu {
+    color: #E8E8DD;
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#mobile_menu:hover {
+    cursor: pointer;
 }
 
 #mobile_khl {
-    background: #222229;
+    position: fixed;
     color: #E8E8DD;
-    padding-left: 30px;
-    padding-bottom: 10px;
-    padding-top: 10px;
     font-family: Futura, "Trebuchet-MS", Arial, sans-serif;
+    padding-left: 30px;
 }
 
 .andrew_img_mobile {
@@ -38,7 +51,7 @@
     position: absolute;
     top: 5%;
     right: 5%; 
-    margin-left: 5%;
+    left: 5%;
     top: 10%;
     background: white;
     opacity: 0.8;
@@ -49,4 +62,15 @@
 #mobile_welcome p {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.mobile_nav_display {
+    display: none;
+    border-bottom: solid;
+    border-width: thin;
+    border-color: #E8E8DD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #E8E8DD;
+    text-align: center;
 }

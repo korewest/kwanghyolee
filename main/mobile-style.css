@@ -1,0 +1,15 @@
+/*
+
+mobile-style.css 
+
+allows us to control dimensions of mobile version of
+website without changing dimensions of desktop version.
+
+*/
+
+#mobile_about0tab {
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #CDDDE5;
+}

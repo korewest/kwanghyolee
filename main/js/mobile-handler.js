@@ -7,46 +7,52 @@ $(document).ready(function() {
     var temp_html = $("#name_text").html();
     $("#mobile_name_text").html(temp_html);
     
+    // prevent resizing from resetting content within windows px boundary
+    var preserve_page_content = false;
+    
     function checkWidth() { 
         var windowSize = $window.width();
         
         /* Temporary solution to handle mobile size display */
         if( windowSize < 750 ) {
-            // handle smaller window size such as mobile, or window resize
-            // hide main nav and show mobile nav
-            $("#main_nav").hide();
-            $("#mobile_nav").show();
-            // Resize andrew_img div 
-            // ideally we would like to add class to the img, but 
-            // img attribute does not support class, so we define 
-            // width/height here
-            $("#andrew_img").addClass("andrew_img_mobile");
-            // hide text in the img box
-            $("#name_text").hide();
             
-            $("#mobile_welcome").show();
+            if( !preserve_page_content ) {
+                // handle smaller window size such as mobile, or window resize
+                // hide main nav and show mobile nav
+                $("#main_nav").hide();
+                $("#mobile_nav").show();
+                // Resize andrew_img div 
+                $("#andrew_img").hide();
+                // hide text in the img box
+                $("#name_text").hide();
+
+                $("#mobile_khl_seg").show();
+                $("#mobile_welcome").show();
+
+                // Temporarily hide other contents while mobile dev is underway
+                $("#chevronDiv").hide();
+                $("#aboutSeg").hide();
+                $("#photographySeg").hide();
+                $("#whatSeg").hide();
+            }
             
-            
-            // Temporarily hide other contents while mobile dev is underway
-            $("#chevronDiv").hide();
-            $("#aboutSeg").hide();
-            $("#photographySeg").hide();
-            $("#whatSeg").hide();
+            // While window size is < 750, preserve page content when resizing
+            preserve_page_content = true;
             
         } else {
+            // Hide all mobile elements
+            $(".mobile_class").hide();
+        
             // Restore to normal (in case of window resize)
             $("#main_nav").show();
-            $("#mobile_nav").hide();
-            
-            $("#andrew_img").removeClass("andrew_img_mobile");
+            $("#andrew_img").show();
             $("#name_text").show();
-            $("#mobile_welcome").hide();
-            
-            
             $("#chevronDiv").show();
             $("#aboutSeg").show();
             $("#photographySeg").show();
             $("#whatSeg").show();
+            
+            preserve_page_content = false;
         }
     }
     
@@ -69,14 +75,6 @@ $(document).ready(function() {
             $("#mobile_name_text").slideDown("slow");
         } else {
             $("#mobile_name_text").slideUp("slow");
-        }
-    });
-    
-    $("#mobile_menu, .mobile_nav_display").click(function() {
-        if( $(".mobile_nav_display").is(":hidden") ) {
-            $(".mobile_nav_display").slideDown("slow");
-        } else {
-            $(".mobile_nav_display").slideUp("slow");
         }
     });
     

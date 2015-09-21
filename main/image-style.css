@@ -15,17 +15,6 @@
     to   { opacity: 1; }
 }
 
-/*
-#andrew_img img{
-    -webkit-animation: fadein 3s;
-    -moz-animation: fadein 3s;
-    -ms-animation: fadein 3s;
-    animation: fadein 3s;
-    
-    width: 100%;
-    height: 100%;
-}
-*/
 #andrew_img {
     -webkit-animation: fadein 3s;
     -moz-animation: fadein 3s;

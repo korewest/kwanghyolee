@@ -3,10 +3,13 @@
 <html lang="en">
 <head>
     <title>KwanghyoLee</title>
+    
     <link rel="logo" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="main-style.css">
     <link rel="stylesheet" href="image-style.css">
     <link rel="stylesheet" href="mobile-nav.css">
+    <link rel="stylesheet" href="mobile-style.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
     </script>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -28,14 +31,23 @@
         
     </nav>
         
-    <div id="mobile_nav">
-        <div id="mobile_khl">KWANGHYO LEE</div>
+    <div id="mobile_nav" class="mobile_class">
+        <div id="mobile_khl_name">KWANGHYO LEE</div>
         <div id="mobile_menu">menu</div>
-        <div id="mobile_break"><br></div>
+        <div><br></div>
+        <!-- div id of nav should match _seg div id -->
+        <div id="mobile_khl" class="mobile_nav_display">Home</div>
         <div id="mobile_about" class="mobile_nav_display">About</div>
         <div id="mobile_photography" class="mobile_nav_display">Photography</div>
         <div id="mobile_what" class="mobile_nav_display">WhatsUp</div>
-        <div id="mobile_contact" class="mobile_nav_display">Contact</div>
+    </div>
+    
+    <div id="mobile_khl_seg" class="mobile_class relative">
+        <div id="mobile_welcome" style="display: none;"><p>WELCOME</p>
+            <div id="mobile_name_text" style="display: none;">
+                <!-- Content filled by mobile-handler.jss -->
+            </div>
+        </div>
     </div>
     
     <div id="andrew_img" class="relative">
@@ -50,16 +62,31 @@
             </i>
         </div>
         
-        <div id="mobile_welcome" style="display: none;"><p>WELCOME</p>
-            <div id="mobile_name_text" style="display: none;">
-            </div>
-        </div>
-        
     </div>
     
     <div id="chevronDiv">
             <img src="img/chevron-left.png" id="chevScrollLeft">
             <img src="img/chevron-right.png" id="chevScrollRight">
+    </div>
+    
+    <!-- Content to be filled by mobile-nav-handler.js -->
+    <!-- IMPORTANT: mobile _seg elements should encapsulate entire block of context to hide / show -->
+    <div id="mobile_about_seg" class="mobile_class" style="display:none;">
+        <div id="mobile_about0tab">
+            <div id="mobile_about0text">
+            </div>
+            <div id="mobile_about0pic">
+                <img src="img/web_dev.gif">
+            </div>
+        </div>
+        <div id="mobile_about1tab">
+            <div id="mobile_about1text">
+            </div>
+        </div>
+        <div id="mobile_about2tab">
+            <div id="mobile_about2text">
+            </div>
+        </div>
     </div>
     
     <div class="padding aboutSegBackground0" id="aboutSeg">
@@ -93,11 +120,6 @@
                     for recruitment of Pacific's engineer students and I continue to reach out in ways that I 
                     hope will help the engineering department. </p>
             </div>
-            <!-- 
-            <div id="about1pic">
-                <img src="img/pacific_seal.gif">
-            </div>
-            -->
         </div>
         
         <div id="about2tab" class="hiddenAboutPage">
@@ -116,6 +138,9 @@
         
     </div>
     
+    <div id="mobile_photography_seg" class="mobile_class">
+    </div>
+    
     <div class="padding photoSegBackground0" id="photographySeg">
         <div id="phototext">
         <h1> DKL Portraits </h1>
@@ -125,6 +150,9 @@
                 </a>
             </p>
         </div>
+    </div>
+    
+    <div id="mobile_what_seg" class="mobile_class">
     </div>
     
     <div class="padding" id="whatSeg">
@@ -157,6 +185,7 @@
     <script src="js/photo-change.js"></script>
     <script src="js/preload-images.js"></script>
     <script src="js/mobile-handler.js"></script>
+    <script src="js/mobile-nav-handler.js"></script>
         
 </body>
     

@@ -106,6 +106,34 @@ $(document).ready(function() {
         }
     });
     
+    $(".mobile_nav_display")
+        .mousedown(function(event) { 
+            var menu_item_clicked = $(event.target).attr("id");
+            $("#"+menu_item_clicked).css("background", "black");
+            $("#"+menu_item_clicked).css("opacity", "0.7");
+        })
+        .mouseover(function() {
+            var menu_item_clicked = $(event.target).attr("id");
+            $("#"+menu_item_clicked).css("background", "black");
+            $("#"+menu_item_clicked).css("opacity", "0.7");
+        })
+        .mouseout(function() {
+            var menu_item_clicked = $(event.target).attr("id");
+            $("#"+menu_item_clicked).css("background", "#222229");
+            $("#"+menu_item_clicked).css("opacity", "1.0");
+    });
+    
+    $("#mobile_menu_icon")
+        .mousedown(function(event) { 
+            $(this).css("opacity", "0.5");
+        })
+        .mouseover(function() {
+            $(this).css("opacity", "0.5");
+        })
+        .mouseout(function() {
+            $(this).css("opacity", "1.0");
+    });
+    
     // check width on load
     checkWidth();
     

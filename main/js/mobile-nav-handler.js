@@ -9,6 +9,14 @@ $(document).ready(function() {
         }
     });
     
+    // if user clicks outside of nav, close nav
+    $(document).mouseup( function(e) {
+        var cont = $(".mobile_nav_display");
+        if (!cont.is(e.target) && cont.has(e.target).length === 0) {
+            $(".mobile_nav_display").slideUp("fast");
+        }
+    });
+       
     //Determine what page to display
     var displayPageId = "";
     

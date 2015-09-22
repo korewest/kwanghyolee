@@ -134,7 +134,7 @@ p.large {
     width: 40%;
     z-index 2;
     max-height: 460px;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 #about0pic {

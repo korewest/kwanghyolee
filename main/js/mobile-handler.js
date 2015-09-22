@@ -112,12 +112,17 @@ $(document).ready(function() {
             $("#"+menu_item_clicked).css("background", "black");
             $("#"+menu_item_clicked).css("opacity", "0.7");
         })
-        .mouseover(function() {
+        .mouseup(function(event) {
+            var menu_item_clicked = $(event.target).attr("id");
+            $("#"+menu_item_clicked).css("background", "#222229");
+            $("#"+menu_item_clicked).css("opacity", "1.0");
+        })
+        .mouseover(function(event) {
             var menu_item_clicked = $(event.target).attr("id");
             $("#"+menu_item_clicked).css("background", "black");
             $("#"+menu_item_clicked).css("opacity", "0.7");
         })
-        .mouseout(function() {
+        .mouseout(function(event) {
             var menu_item_clicked = $(event.target).attr("id");
             $("#"+menu_item_clicked).css("background", "#222229");
             $("#"+menu_item_clicked).css("opacity", "1.0");

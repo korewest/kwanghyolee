@@ -1,3 +1,12 @@
+/*
+
+photo-change.js
+
+Handles background change of photography segment, for both 
+mobile and desktop versions.
+
+*/
+
 $(document).ready(function() {
     
     var numPhotos = 4;
@@ -11,11 +20,11 @@ $(document).ready(function() {
             nextPhoto = 0;
         }
         
-        $("#photographySeg").css("opacity", "0.4");
-        $("#photographySeg").animate({ "opacity" : "1.0" }, 2500 )
+        $("#photographySeg, #mobile_photography_seg").css("opacity", "0.4");
+        $("#photographySeg, #mobile_photography_seg").animate({ "opacity" : "1.0" }, 2500 );
         
-        $("#photographySeg").removeClass("photoSegBackground" + currPhoto.toString());
-        $("#photographySeg").addClass("photoSegBackground" + nextPhoto.toString());
+        $("#photographySeg, #mobile_photography_seg").removeClass("photoSegBackground" + currPhoto.toString());
+        $("#photographySeg, #mobile_photography_seg").addClass("photoSegBackground" + nextPhoto.toString());
         
         currPhoto = nextPhoto;
     }

@@ -1,4 +1,5 @@
-// Preload images
+// Preload images for better initial impression
+// Especially improves automatic slideshow on photography background
 
 function preload(arrImg) {
     $(arrImg).each(function() { 
@@ -14,5 +15,6 @@ $(window).load(function() {
              '../img/lisha.jpg',
              '../img/max.jpg',
              '../img/pacific_spirit_bw.jpg',
-             '../img/south_korea_city.jpg']);
+             '../img/south_korea_city.jpg',
+             '../img/golden_gate.jpg']);
 });

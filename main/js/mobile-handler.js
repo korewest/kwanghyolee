@@ -1,11 +1,36 @@
-// Handle mobile webpage via page width
+/* 
+
+mobile-handler.js 
+
+Handle mobile webpage via page width detection.
+When window is resized, or loads with certain pixel dimensions less than specified,
+desktop elements are hidden and mobile elements are shown. 
+
+Empty mobile divs are filled with html from existing data in corresponding
+sections. Mobile divs are completely separate entities with styling / behavior 
+of its own.
+
+*/
 
 $(document).ready(function() {
+    
     var $window = $(window);
     
     // some variable initializations on load
     var temp_html = $("#name_text").html();
     $("#mobile_name_text").html(temp_html);
+    temp_html = $("#about0text").html();
+    $("#mobile_about0text").html(temp_html);
+    temp_html = $("#about1text").html();
+    $("#mobile_about1text").html(temp_html);
+    temp_html = $("#about2text").html();
+    $("#mobile_about2text").html(temp_html);
+    temp_html = $("#photo_text").html();
+    $("#mobile_photo_text").html(temp_html);
+    temp_html = $("#contactSeg").html();
+    $("#mobile_contact").html(temp_html);
+    temp_html = $("#whattext").html();
+    $("#mobile_what_text").html(temp_html);
     
     // prevent resizing from resetting content within windows px boundary
     var preserve_page_content = false;
@@ -28,12 +53,14 @@ $(document).ready(function() {
 
                 $("#mobile_khl_seg").show();
                 $("#mobile_welcome").show();
+                $("#mobile_contact").show();
 
                 // Temporarily hide other contents while mobile dev is underway
                 $("#chevronDiv").hide();
                 $("#aboutSeg").hide();
                 $("#photographySeg").hide();
                 $("#whatSeg").hide();
+                $("#contactSeg").hide();
             }
             
             // While window size is < 750, preserve page content when resizing
@@ -51,6 +78,7 @@ $(document).ready(function() {
             $("#aboutSeg").show();
             $("#photographySeg").show();
             $("#whatSeg").show();
+            $("#contactSeg").show();
             
             preserve_page_content = false;
         }
@@ -72,9 +100,9 @@ $(document).ready(function() {
     
     $("#mobile_welcome").click(function() {
         if( $("#mobile_name_text").is(":hidden") ) {
-            $("#mobile_name_text").slideDown("slow");
+            $("#mobile_name_text").slideDown("fast");
         } else {
-            $("#mobile_name_text").slideUp("slow");
+            $("#mobile_name_text").slideUp("fast");
         }
     });
     

@@ -1,12 +1,11 @@
 $(document).ready(function() {
     
-    
     // Show and hide menu when menu element is clicked
     $("#mobile_menu, .mobile_nav_display").click(function() {
         if( $(".mobile_nav_display").is(":hidden") ) {
-            $(".mobile_nav_display").slideDown("slow");
+            $(".mobile_nav_display").slideDown("fast");
         } else {
-            $(".mobile_nav_display").slideUp("slow");
+            $(".mobile_nav_display").slideUp("fast");
         }
     });
     
@@ -35,11 +34,4 @@ $(document).ready(function() {
         
     });
     
-    
-    var temp_html = $("#about0text").html();
-    $("#mobile_about0text").html(temp_html);
-    temp_html = $("#about1text").html();
-    $("#mobile_about1text").html(temp_html);
-    temp_html = $("#about2text").html();
-    $("#mobile_about2text").html(temp_html);
 });

@@ -15,6 +15,24 @@ website without changing dimensions of desktop version.
 }
 
 #mobile_khl_seg {
+    width: 100%;
+}
+
+#mobile_name_text {
+    background: white;
+    color: #222229;
+    font-size: 20px;
+    
+    opacity: 0.8;
+    text-align: center;
+    
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#mobile_andrew_img {
     -webkit-animation: fadein 3s;
     -moz-animation: fadein 3s;
     -ms-animation: fadein 3s;
@@ -26,29 +44,8 @@ website without changing dimensions of desktop version.
     background-size: cover;
     
     width: 100%;
-    height: 640px;
-}
-
-#mobile_name_text {
-    word-wrap: break-word;
-    width:inherit;
-    padding: 2%;
-    background: #222229;
-    color: #E8E8DD;
-    opacity: 0.95;
-    font-size: 20px;
-}
-
-#mobile_welcome {
-    position: absolute;
-    top: 5%;
-    right: 5%; 
-    left: 5%;
-    top: 10%;
-    background: white;
-    opacity: 0.8;
-    border-bottom: solid;
-    text-align: center;
+    
+    height: 500px;
 }
 
 #mobile_welcome p {
@@ -76,7 +73,7 @@ website without changing dimensions of desktop version.
     padding-left: 10px;
     padding-right: 10px;
     background: #161414;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 #mobile_about2tab {
@@ -96,13 +93,13 @@ website without changing dimensions of desktop version.
 }
 
 #mobile_photography_seg {
-    height: 350px;
+    height: 500px;
     padding-top: 60px;
     padding-bottom: 60px;
     
     /* Override desktop version of background */
     background-size: cover;
-    background-position: 10 20px;
+    background-position: 12 20px;
 }
 
 #mobile_photo_text {
@@ -110,7 +107,7 @@ website without changing dimensions of desktop version.
     opacity: 0.4;
     position: absolute;
     width: 100%;
-    top: 340px;
+    top: 490px;
 }
 
 #mobile_what_seg {

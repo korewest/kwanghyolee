@@ -134,7 +134,7 @@ p.large {
     width: 40%;
     z-index 2;
     max-height: 460px;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 #about0pic {
@@ -217,3 +217,11 @@ p.large {
     display: block;
 }
 
+
+i {
+    font-family: Futura, "Trebuchet-MS", Arial, sans-serif;
+}
+
+b {
+    font-family: Futura, "Trebuchet-MS", Arial, sans-serif;
+}

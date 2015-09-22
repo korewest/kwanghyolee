@@ -52,7 +52,6 @@ $(document).ready(function() {
                 $("#name_text").hide();
 
                 $("#mobile_khl_seg").show();
-                $("#mobile_welcome").show();
                 $("#mobile_contact").show();
 
                 // Temporarily hide other contents while mobile dev is underway
@@ -83,28 +82,6 @@ $(document).ready(function() {
             preserve_page_content = false;
         }
     }
-    
-    // Mobile does not like css hover
-    $("#mobile_welcome")
-        .mousedown(function() { 
-            $("#mobile_welcome").css("opacity", "0.95");
-        })
-        .mouseover(function() {
-            $("#mobile_welcome").css("opacity", "0.95");
-            $("#mobile_welcome").css("cursor", "pointer");
-        })
-        .mouseout(function() {
-            $("#mobile_welcome").css("opacity", "0.8");
-            $("#mobile_welcome").css("cursor", "default");
-    });
-    
-    $("#mobile_welcome").click(function() {
-        if( $("#mobile_name_text").is(":hidden") ) {
-            $("#mobile_name_text").slideDown("fast");
-        } else {
-            $("#mobile_name_text").slideUp("fast");
-        }
-    });
     
     $(".mobile_nav_display")
         .mousedown(function(event) { 
